@@ -9,7 +9,7 @@ def send_verification_email(to_email, verification_token):
     sender_email = os.getenv('GMAIL_MAIL')
     sender_password = os.getenv('GMAIL_PWD')
     subject = 'Account Verification'
-    FE_URL= os.getenv('FRONT_URL')
+    FE_URL= os.getenv('FRONTEND_URL')
     
     message = MIMEMultipart()
     message['From'] = sender_email
